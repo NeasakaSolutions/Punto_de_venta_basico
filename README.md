@@ -10,7 +10,40 @@ El proyecto será diseñado con una arquitectura modular para facilitar la incor
 
 ---
 
-# Objetivos
+## Tecnologías
+
+### Backend
+- **Django** - Framework principal para el desarrollo del backend.
+- **Django REST Framework** - Desarrollo y gestión de la API REST.
+
+### Frontend
+- **Vue.js** - Desarrollo de la interfaz de usuario.
+
+### Base de Datos
+- **MySQL** - Sistema de gestión de base de datos relacional.
+
+## Estructura del proyecto
+
+
+## Estrategia de ramas
+
+El proyecto utiliza una estrategia de ramas para separar el desarrollo del backend y frontend, manteniendo una rama principal estable.
+
+| Rama | Descripción |
+|------|-------------|
+| `main` | Rama principal. Contiene la versión estable del proyecto. |
+| `feature/backend` | Contiene la versión funcional y estable del backend. |
+| `backend/nea` | Rama destinada al desarrollo de nuevas funcionalidades y mejoras del backend antes de integrarlas en `feature/backend`. |
+| `feature/frontend` | Contiene la versión funcional y estable del frontend. |
+| `frontend/nea` | Rama destinada al desarrollo de nuevas funcionalidades y mejoras del frontend antes de integrarlas en `feature/frontend`. |
+
+### Flujo de trabajo
+
+- Todo el desarrollo de nuevas funcionalidades se realiza en `backend/nea` o `frontend/nea`.
+- Una vez que los cambios son probados y validados, se integran en `feature/backend` o `feature/frontend`.
+- Finalmente, cuando el backend y frontend se encuentran estables, los cambios se fusionan en `main`, manteniendo una versión lista para producción.
+
+## Objetivos
 
 * Administrar productos del restaurante.
 * Controlar el inventario.
@@ -22,7 +55,7 @@ El proyecto será diseñado con una arquitectura modular para facilitar la incor
 
 ---
 
-# Alcance (MVP)
+## Alcance (MVP)
 
 ## Seguridad
 
@@ -98,7 +131,7 @@ Estados:
 
 ---
 
-# Requisitos No Funcionales
+## Requisitos No Funcionales
 
 * Interfaz simple e intuitiva.
 * Operaciones rápidas.
@@ -108,7 +141,7 @@ Estados:
 
 ---
 
-# Funcionalidades Futuras
+## Funcionalidades Futuras
 
 Estas características no forman parte de la primera versión, pero la arquitectura deberá permitir incorporarlas posteriormente:
 
@@ -126,7 +159,7 @@ Estas características no forman parte de la primera versión, pero la arquitect
 
 ---
 
-# Flujo General del Sistema
+## Flujo General del Sistema
 
 1. El administrador inicia sesión.
 2. Administra los productos e inventario.
@@ -140,7 +173,12 @@ Estas características no forman parte de la primera versión, pero la arquitect
 
 ---
 
-# Objetivo de Desarrollo
+## Objetivo de Desarrollo
 
 Construir un sistema sencillo, funcional y escalable que sirva como base para futuras versiones con nuevas funcionalidades, manteniendo una estructura de código limpia y modular.
+
+## Equipo de Desarrollo
+
+- Ubaldo Narvaez Montoya - JR Fullstack Developer
+
 
